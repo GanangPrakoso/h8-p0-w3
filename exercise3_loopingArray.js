@@ -13,15 +13,12 @@ function dataHandling(input) {
     // var tanggal='';
     // var hobi = '';
 
-    for (i=0; i<input.length; i++){
-
-        console.log(i);
-        
+    for (i=0; i<=input.length-1; i++){
+        console.log(' ');
         console.log('NomorID: '+input[i][0]);
         console.log('Nama Lengkap: '+input[i][1]);
         console.log('TTL: '+input[i][3]+' '+input[i][2]);
         console.log('Hobi: '+input[i][4]);
-        console.log(' ');
         
         //Coba coba menggunakan if
         

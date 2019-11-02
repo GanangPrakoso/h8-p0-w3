@@ -1,11 +1,11 @@
 function dataHandling2(arr) {
-    arr =["0001", 'Roman Alamsyah', 'Bandar Lampung','21/05/1989', 'Membaca'];
+    arr = ["0001", 'Roman Alamsyah', 'Bandar Lampung','21/05/1989', 'Membaca'];
     arr.splice(1,1, 'Roman Alamsyah Elsharawy')
     arr.splice(2,1,'Provinsi Bandar Lampung')
     arr.splice(4,1, 'Pria', 'SMA Internasional Metro')
-     console.log(arr);
+    console.log(arr);
     
-    var ttl = arr[3].split("");  
+    var ttl = arr[3].split("");
     var day = ttl[0]+ttl[1];
     var month = ttl[3]+ttl[4];
     var year = ttl[6]+ttl[7]+ttl[8]+ttl[9];
@@ -57,13 +57,10 @@ function dataHandling2(arr) {
     ttlArray.sort(function(a, b){return b-a});
     console.log(ttlArray);
 
-    var ttlArray = [day, month, year];
-    var joinTtlArray = ttlArray.join('-');
-    console.log(joinTtlArray);
+    ttlArray = ttlArray.join('-');
+    console.log(ttlArray);
     
-    var namaNama = arr[1].split('');
-    var joinNama = namaNama.join('');
-    var sliceNama = joinNama.slice(0,14); 
-    console.log(sliceNama);   
+    var namaNama = arr[1].split().join().slice(0, 14);
+    console.log(namaNama); 
 }   
 dataHandling2();
